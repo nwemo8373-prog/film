@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="htmlRoot">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    
+    <!-- SEO & Open Graph Meta Tags for Rich Sharing Preview -->
+    <title>ليالي كوين 2 | NEGM MOVIES — VIP</title>
+    <meta name="description" content="منصة ليالي كوين 2 VIP الحصرية لمشاهدة أحدث الأفلام والمسلسلات العربية والعالمية بجودة عالية وبدون إعلانات مزعجة. اكتشف عالم السينما الآن.">
+    <meta property="og:title" content="ليالي كوين 2 | NEGM MOVIES — VIP">
+    <meta property="og:description" content="استمتع بمشاهدة وتحميل أحدث الأفلام والمسلسلات الحصرية، وتصفح أعمال نجومك المفضلين بجودة VIP.">
+    <meta property="og:image" content="logo.jpg">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+    <link rel="apple-touch-icon" href="logo.jpg">
+
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+    <script>
+      window.OneSignalDeferred = window.OneSignalDeferred || [];
+      window.OneSignalDeferred.push(async function(OneSignal) {
+        try {
+          await OneSignal.init({
+            appId: "de1ce731-8984-412a-9d04-f04e9708263c",
+            safari_web_id: "",
+            notifyButton: { enable: true },
+            allowLocalhostAsSecureOrigin: true
+          });
+          if (OneSignal.Slidedown && typeof OneSignal.Slidedown.promptPush === 'function') {
+            await OneSignal.Slidedown.promptPush();
+          }
+        } catch(e) { console.log("OneSignal error:", e); }
+      });
+    </script>
+
+    <style>
+        /* =========================================================
+           NEGM MOVIES VIP — LAYALY QUEEN EDITION 2026
+           ========================================================= */
+        :root {
+            --bg-main: #07090e;
+            --bg-card: #10141f;
+            --bg-card-hover: #171d2d;
+            --text-main: #ffffff;
+            --text-muted: #8b9bb4;
+            --accent-primary: #7928ca;
+            --accent-secondary: #ff007f;
+            --gold: #f5a623;
+            --border: rgba(255, 255, 255, 0.08);
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+            --radius: 12px;
+            --header-height: 70px;
+            --bottom-height: 70px;
+            --safe-bottom: env(safe-area-inset-bottom, 1rem);
+            --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        /* Themes */
+        body.theme-cyber {
+            --bg-main: #030305;
+            --bg-card: #0a0d14;
+            --accent-primary: #00f2fe;
+            --accent-secondary: #4facfe;
+            --gold: #00ffcc;
+        }
+        body.theme-gold {
+            --bg-main: #0c0a07;
+            --bg-card: #19140f;
+            --accent-primary: #d4af37;
+            --accent-secondary: #f5a623;
+            --gold: #ffe066;
+        }
+
+        /* Fonts */
+        body.font-modern { --font-family: 'Cairo', sans-serif; }
+        body.font-bold { --font-family: 'Tajawal', sans-serif; font-weight: bold; }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+            font-family: var(--font-family);
+        }
+
+        html, body {
+            width: 100%;
+            min-height: 100dvh;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        body {
+            background-image: 
+                radial-gradient(circle at 10% 10%, rgba(121, 40, 202, 0.12), transparent 40%),
+                radial-gradient(circle at 90% 90%, rgba(255, 0, 127, 0.1), transparent 40%);
+            padding-bottom: calc(var(--bottom-height) + var(--safe-bottom));
+        }
+
+        button, input, select, textarea {
+            font: inherit;
+            border: none;
+            outline: none;
+            background: none;
+            color: inherit;
+        }
+
+        button { cursor: pointer; }
+        a { text-decoration: none; color: inherit; }
+
+        /* Loader */
+        .loader {
+            position: fixed;
+            inset: 0;
+            background: var(--bg-main);
+            z-index: 99999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 15px;
+            transition: opacity 0.4s ease, visibility 0.4s ease;
+        }
+        .loader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+        .loader-logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: url("logo.jpg") center/cover no-repeat;
+            border: 3px solid var(--accent-secondary);
+            box-shadow: 0 0 25px rgba(255, 0, 127, 0.5);
+            animation: pulseLogo 1.5s infinite;
+        }
+        @keyframes pulseLogo {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 20px rgba(255,0,127,0.4); }
+            50% { transform: scale(1.08); box-shadow: 0 0 35px rgba(255,0,127,0.8); }
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0; right: 0; left: 0;
+            height: var(--header-height);
+            background: rgba(7, 9, 14, 0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 900;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .logo-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: url("logo.jpg") center/cover no-repeat;
+            border: 2px solid var(--accent-secondary);
+        }
+        .logo-text span { color: var(--accent-secondary); }
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .icon-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            position: relative;
+            transition: 0.2s;
+        }
+        .icon-btn:hover { background: var(--bg-card-hover); }
+
+        /* Sub Header Nav */
+        .sub-nav {
+            position: fixed;
+            top: var(--header-height);
+            right: 0; left: 0;
+            background: rgba(10, 13, 20, 0.95);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            gap: 15px;
+            padding: 10px 15px;
+            overflow-x: auto;
+            scrollbar-width: none;
+            z-index: 999;
+        }
+        .sub-nav::-webkit-scrollbar { display: none; }
+        .sub-nav button {
+            white-space: nowrap;
+            font-size: 13px;
+            font-weight: 800;
+            color: var(--text-muted);
+            transition: 0.2s;
+        }
+        .sub-nav button.active, .sub-nav button:hover {
+            color: var(--text-main);
+            text-shadow: 0 0 10px rgba(255,0,127,0.5);
+        }
+
+        /* Main Content */
+        main {
+            margin-top: calc(var(--header-height) + 45px);
+            padding: 15px;
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Hero Banner */
+        .hero {
+            position: relative;
+            width: 100%;
+            border-radius: 16px;
+            overflow: hidden;
+            min-height: 380px;
+            display: flex;
+            align-items: flex-end;
+            background: #000;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            margin-bottom: 25px;
+        }
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.65;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 30%, rgba(7,9,14,0.95) 90%);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+            width: 100%;
+        }
+        .hero-title {
+            font-size: clamp(20px, 4vw, 32px);
+            font-weight: 900;
+            margin-bottom: 8px;
+        }
+        .hero-desc {
+            font-size: 12px;
+            color: var(--text-muted);
+            line-height: 1.5;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            margin-bottom: 12px;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 900;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 15px rgba(255,0,127,0.3);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .btn-primary:active { transform: scale(0.96); }
+
+        /* Filter Section */
+        .filter-bar {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .filter-select {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 800;
+            color: var(--text-main);
+        }
+
+        /* Section Head */
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .section-title {
+            font-size: 16px;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .section-title::before {
+            content: "";
+            width: 4px;
+            height: 16px;
+            background: var(--accent-secondary);
+            border-radius: 2px;
+        }
+
+        /* Movie Grid & Cards */
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+        @media(min-width: 600px) { .movie-grid { grid-template-columns: repeat(3, 1fr); } }
+        @media(min-width: 900px) { .movie-grid { grid-template-columns: repeat(5, 1fr); } }
+        @media(min-width: 1200px) { .movie-grid { grid-template-columns: repeat(6, 1fr); } }
+
+        .movie-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .movie-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(255, 0, 127, 0.4);
+        }
+        .movie-poster {
+            width: 100%;
+            aspect-ratio: 2/3;
+            position: relative;
+            background: #111;
+        }
+        .movie-poster img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .movie-rating {
+            position: absolute;
+            top: 6px; right: 6px;
+            background: rgba(0,0,0,0.75);
+            backdrop-filter: blur(6px);
+            color: var(--gold);
+            font-size: 10px;
+            font-weight: 900;
+            padding: 3px 6px;
+            border-radius: 6px;
+        }
+        .movie-info { padding: 10px; }
+        .movie-name {
+            font-size: 12px;
+            font-weight: 900;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: center;
+        }
+
+        /* Modals */
+        .modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.9);
+            backdrop-filter: blur(20px);
+            z-index: 6000;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+        }
+        .modal.active { opacity: 1; visibility: visible; }
+        .modal-content {
+            width: 100%;
+            max-width: 900px;
+            max-height: 92dvh;
+            background: var(--bg-card);
+            border-radius: 20px 20px 0 0;
+            overflow-y: auto;
+            padding: 20px;
+            transform: translateY(100%);
+            transition: transform 0.3s cubic-bezier(0.1, 1, 0.1, 1);
+        }
+        .modal.active .modal-content { transform: translateY(0); }
+
+        /* Cast Row */
+        .cast-row {
+            display: flex;
+            gap: 12px;
+            overflow-x: auto;
+            scrollbar-width: none;
+            margin: 15px 0;
+            padding-bottom: 5px;
+        }
+        .cast-row::-webkit-scrollbar { display: none; }
+        .cast-card {
+            min-width: 75px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .cast-img {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--accent-secondary);
+            margin-bottom: 5px;
+        }
+        .cast-name {
+            font-size: 10px;
+            font-weight: 800;
+            color: var(--text-main);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* Cinema Mode Effect */
+        body.cinema-mode::after {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 5500;
+            pointer-events: none;
+            transition: 0.3s;
+        }
+        body.cinema-mode .modal { z-index: 6000; }
+
+        /* Interstitial Ad Overlay */
+        .ad-interstitial {
+            position: fixed;
+            inset: 0;
+            background: rgba(5,7,12,0.98);
+            z-index: 9999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+            text-align: center;
+        }
+        .ad-logo-box {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: url("logo.jpg") center/cover no-repeat;
+            border: 3px solid var(--accent-secondary);
+            box-shadow: 0 0 30px rgba(255,0,127,0.5);
+            margin-bottom: 20px;
+        }
+        .ad-title { font-size: 18px; font-weight: 900; color: var(--gold); margin-bottom: 10px; }
+        .ad-desc { font-size: 13px; color: var(--text-muted); max-width: 400px; margin-bottom: 20px; line-height: 1.6; }
+        .ad-timer { font-size: 16px; font-weight: 1000; color: var(--accent-secondary); background: rgba(255,0,127,0.1); padding: 8px 16px; border-radius: 20px; border: 1px solid rgba(255,0,127,0.3); }
+
+        /* Player & Servers */
+        .video-box {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: #000;
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 15px 0;
+            border: 1px solid var(--border);
+        }
+        .video-box iframe { width: 100%; height: 100%; border: none; }
+        .servers-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+        .server-btn {
+            flex: 1;
+            background: var(--bg-main);
+            border: 1px solid var(--border);
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 900;
+            text-align: center;
+            transition: 0.2s;
+        }
+        .server-btn.active { background: var(--accent-secondary); border-color: transparent; box-shadow: 0 0 15px rgba(255,0,127,0.4); }
+
+        /* Bottom Nav */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0; right: 0; left: 0;
+            height: calc(var(--bottom-height) + var(--safe-bottom));
+            padding-bottom: var(--safe-bottom);
+            background: rgba(7,9,14,0.95);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 1000;
+        }
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            color: var(--text-muted);
+            font-size: 10px;
+            font-weight: 900;
+            width: 20%;
+        }
+        .nav-item.active { color: var(--accent-secondary); }
+        .nav-item svg { width: 20px; height: 20px; fill: currentColor; }
+
+        /* Toast */
+        .toast {
+            position: fixed;
+            bottom: 90px; left: 50%;
+            transform: translateX(-50%) translateY(20px);
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 12px;
+            font-weight: 900;
+            box-shadow: var(--shadow);
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+            z-index: 99999;
+            text-align: center;
+        }
+        .toast.show { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+
+        .empty-state { text-align: center; padding: 40px 20px; color: var(--text-muted); font-size: 13px; }
+
+        /* Settings Item Row */
+        .setting-group {
+            background: var(--bg-main);
+            padding: 12px 15px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid var(--border);
+        }
+        .setting-title { font-size: 13px; font-weight: 900; }
+        .setting-control select, .setting-control input {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            color: var(--text-main);
+        }
+        .switch {
+            position: relative; display: inline-block; width: 44px; height: 24px;
+        }
+        .switch input { opacity: 0; width: 0; height: 0; }
+        .slider {
+            position: absolute; cursor: pointer; inset: 0; background-color: #333;
+            transition: .3s; border-radius: 24px; border: 1px solid var(--border);
+        }
+        .slider:before {
+            position: absolute; content: ""; height: 18px; width: 18px; left: 3px; bottom: 2px;
+            background-color: white; transition: .3s; border-radius: 50%;
+        }
+        input:checked + .slider { background-color: var(--accent-secondary); }
+        input:checked + .slider:before { transform: translateX(20px); }
+
+        /* Search Tabs */
+        .search-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .search-tab-btn {
+            flex: 1;
+            padding: 8px;
+            background: var(--bg-main);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 900;
+            color: var(--text-muted);
+        }
+        .search-tab-btn.active {
+            background: var(--accent-secondary);
+            color: #fff;
+            border-color: transparent;
+        }
+    </style>
+</head>
+<body id="appBody">
+
+    <div id="loader" class="loader">
+        <div class="loader-logo"></div>
+        <div style="font-weight: 900; font-size: 14px; color: var(--text-muted);" id="loaderText">جاري تشغيل ليالي كوين 2...</div>
+    </div>
+
+    <div id="adInterstitial" class="ad-interstitial">
+        <div class="ad-logo-box"></div>
+        <div class="ad-title" id="adHeaderTitle">إعلان مميز برعاية ليالي كوين 2 VIP</div>
+        <div class="ad-desc">استمتع بتجربة مشاهدة مذهلة وحصرية لأروع الأفلام والمسلسلات بجودة فائقة!</div>
+        <div class="ad-timer" id="adTimerText">سيبدأ الفيلم خلال 5 ثوانٍ...</div>
+    </div>
+
+    <header class="header">
+        <div class="logo-area" onclick="showSection('home')">
+            <div class="logo-img"></div>
+            <div class="logo-text">ليالي كوين 2 <span>NEGM</span></div>
+        </div>
+        <div class="header-actions">
+            <button class="icon-btn" onclick="openSearchModal()" title="بحث">🔍</button>
+            <button class="icon-btn" onclick="openSettingsModal()" title="الإعدادات">⚙️</button>
+            <button class="icon-btn" onclick="showSection('vip')" title="VIP">👑</button>
+        </div>
+    </header>
+
+    <nav class="sub-nav">
+        <button class="active" onclick="showSection('home')" data-lang-key="home">الرئيسية</button>
+        <button onclick="showSection('movies')" data-lang-key="movies">الأفلام</button>
+        <button onclick="showSection('series')" data-lang-key="series">المسلسلات</button>
+        <button onclick="showSection('trending')" data-lang-key="trending">🔥 الرائج</button>
+        <button onclick="showSection('favorites')" data-lang-key="favorites">المفضلة</button>
+        <button onclick="showSection('ai')" data-lang-key="ai">🤖 مساعد الذكاء</button>
+    </nav>
+
+    <main>
+        <section id="homeSection">
+            <div class="hero" id="heroBanner">
+                <div class="hero-bg" id="heroBg"></div>
+                <div class="hero-content">
+                    <h1 class="hero-title" id="heroTitle">تحميل...</h1>
+                    <p class="hero-desc" id="heroDesc">اكتشف أحدث الأفلام والمسلسلات بجودة عالية VIP.</p>
+                    <button class="btn-primary" id="heroPlayBtn">مشاهدة الآن 🎬</button>
+                </div>
+            </div>
+
+            <div class="filter-bar">
+                <select id="countryFilter" class="filter-select" onchange="filterMoviesByCountry()">
+                    <option value="">🌍 اختر الدولة / الأصل</option>
+                    <option value="US">الولايات المتحدة (Hollywood)</option>
+                    <option value="EG">مصر (عربي)</option>
+                    <option value="IN">الهند (Bollywood)</option>
+                    <option value="KR">كوريا الجنوبية</option>
+                    <option value="FR">فرنسا</option>
+                    <option value="JP">اليابان</option>
+                </select>
+            </div>
+
+            <div class="section-header" style="margin-top:15px;">
+                <h2 class="section-title">الأفلام الرائجة اليوم</h2>
+            </div>
+            <div class="movie-grid" id="homeMoviesGrid"></div>
+
+            <div class="section-header">
+                <h2 class="section-title">أبرز المسلسلات</h2>
+            </div>
+            <div class="movie-grid" id="homeSeriesGrid"></div>
+        </section>
+
+        <section id="moviesSection" style="display:none;">
+            <div class="section-header"><h2 class="section-title">مكتبة الأفلام الشاملة</h2></div>
+            <div class="movie-grid" id="moviesGrid"></div>
+        </section>
+
+        <section id="seriesSection" style="display:none;">
+            <div class="section-header"><h2 class="section-title">مكتبة المسلسلات الشاملة</h2></div>
+            <div class="movie-grid" id="seriesGrid"></div>
+        </section>
+
+        <section id="trendingSection" style="display:none;">
+            <div class="section-header"><h2 class="section-title">الأكثر مشاهدة هذا الأسبوع</h2></div>
+            <div class="movie-grid" id="trendingGrid"></div>
+        </section>
+
+        <section id="favoritesSection" style="display:none;">
+            <div class="section-header"><h2 class="section-title">قائمتي المفضلة</h2></div>
+            <div class="movie-grid" id="favoritesGrid"></div>
+        </section>
+
+        <section id="aiSection" style="display:none; background:var(--bg-card); padding:15px; border-radius:var(--radius); border:1px solid var(--border);">
+            <div class="section-header"><h2 class="section-title">مساعد ليالي كوين الذكي</h2></div>
+            <div id="aiMessages" style="min-height:200px; max-height:350px; overflow-y:auto; margin-bottom:15px; display:flex; flex-direction:column; gap:10px;">
+                <div style="background:var(--bg-main); padding:10px; border-radius:8px; font-size:12px;">أهلاً بك! اسألني عن أي فيلم وسأرشح لك الأفضل.</div>
+            </div>
+            <div style="display:flex; gap:10px;">
+                <input type="text" id="aiInput" placeholder="اكتب سؤالك هنا..." style="flex:1; background:var(--bg-main); border:1px solid var(--border); padding:10px; border-radius:8px; font-size:12px;">
+                <button class="btn-primary" onclick="askAiAssistant()">إرسال</button>
+            </div>
+        </section>
+
+        <section id="vipSection" style="display:none; background:var(--bg-card); padding:20px; border-radius:var(--radius); border:1px solid rgba(245,166,35,0.3); text-align:center;">
+            <h2 style="color:var(--gold); font-size:20px; font-weight:900; margin-bottom:10px;">👑 ترقية حسابك إلى VIP</h2>
+            <p style="font-size:12px; color:var(--text-muted); margin-bottom:15px;">استمتع بمشاهدة بدون إعلانات وبسرعة فائقة وفتح كافة الحصريات.</p>
+            <div style="background:var(--bg-main); padding:15px; border-radius:10px; border:1px dashed var(--gold); margin-bottom:15px; font-size:13px;">
+                أرسل المبلغ على المحفظة: <strong style="color:var(--accent-secondary); font-size:16px;" id="phoneNumber">01206561893</strong>
+                <button onclick="copyPhone()" style="display:block; margin:8px auto 0; background:rgba(255,255,255,0.1); padding:4px 10px; border-radius:6px; font-size:11px;">📋 نسخ الرقم</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Details & Player Modal -->
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                <h3 id="modalTitle" style="font-size:16px; font-weight:900;"></h3>
+                <button onclick="closeDetailsModal()" style="font-size:16px; font-weight:900; background:var(--bg-main); width:32px; height:32px; border-radius:50%;">✕</button>
+            </div>
+            
+            <div style="display:flex; gap:12px; margin-bottom:15px; align-items:center;">
+                <img id="modalPoster" src="" style="width:90px; height:130px; object-fit:cover; border-radius:8px; border:1px solid var(--border);" alt="">
+                <div>
+                    <div id="modalMetaInfo" style="font-size:11px; color:var(--gold); font-weight:800; margin-bottom:6px;">★ التقييم والاصدار</div>
+                    <p id="modalOverview" style="font-size:12px; color:var(--text-muted); line-height:1.5; display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden;"></p>
+                </div>
+            </div>
+
+            <!-- Cast Section -->
+            <div style="font-size:13px; font-weight:900; margin-bottom:8px;">أبرز نجوم العمل:</div>
+            <div class="cast-row" id="modalCastRow"></div>
+
+            <div class="servers-row">
+                <button class="server-btn active" onclick="switchServer('vidsrc', this)">🎬 سيرفر 1 (VIP)</button>
+                <button class="server-btn" onclick="switchServer('vidsrc_me', this)">⚡ سيرفر 2 (سريع)</button>
+                <button class="server-btn" onclick="switchServer('superembed', this)">💎 سيرفر 3 (احتياطي)</button>
+            </div>
+
+            <div class="video-box">
+                <iframe id="moviePlayer" src="" allowfullscreen></iframe>
+            </div>
+
+            <div style="display:flex; gap:10px; margin-top:10px;">
+                <button class="btn-primary" id="favModalBtn" style="flex:1;" onclick="toggleFavoriteCurrent()">♡ إضافة لقائمتي</button>
+                <button class="btn-primary" style="background:linear-gradient(135deg, #f5a623, #ff7f00);" onclick="playNextMovie()">▶ الفيلم التالي تلقائياً</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Actor Profile Modal -->
+    <div id="actorModal" class="modal">
+        <div class="modal-content">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                <h3 id="actorName" style="font-size:16px; font-weight:900;"></h3>
+                <button onclick="closeActorModal()" style="font-size:16px; font-weight:900; background:var(--bg-main); width:32px; height:32px; border-radius:50%;">✕</button>
+            </div>
+            <div style="display:flex; gap:15px; margin-bottom:15px; align-items:flex-start;">
+                <img id="actorPhoto" src="" style="width:100px; height:130px; object-fit:cover; border-radius:8px; border:1px solid var(--border);" alt="">
+                <div>
+                    <div style="font-size:12px; font-weight:900; color:var(--accent-secondary); margin-bottom:4px;">السيرة الذاتية والشرح:</div>
+                    <p id="actorBio" style="font-size:12px; color:var(--text-muted); line-height:1.5; max-height:100px; overflow-y:auto;"></p>
+                </div>
+            </div>
+            <div style="font-size:13px; font-weight:900; margin-bottom:10px;">أبرز أعمال الفنان:</div>
+            <div class="movie-grid" id="actorMoviesGrid" style="max-height:250px; overflow-y:auto;"></div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settingsModal" class="modal">
+        <div class="modal-content" style="max-width: 500px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+                <h3 style="font-size:16px; font-weight:900;">⚙️ لوحة التحكم والإعدادات</h3>
+                <button onclick="closeSettingsModal()" style="font-size:16px; font-weight:900; background:var(--bg-main); width:32px; height:32px; border-radius:50%;">✕</button>
+            </div>
+
+            <div class="setting-group">
+                <div class="setting-title">تغيير الخط</div>
+                <div class="setting-control">
+                    <select id="fontSelect" onchange="changeFont(this.value)">
+                        <option value="default">افتراضي</option>
+                        <option value="font-modern">خط كايورو العصري</option>
+                        <option value="font-bold">خط تجوال العريض</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="setting-group">
+                <div class="setting-title">تغيير اللغة</div>
+                <div class="setting-control">
+                    <select id="langSelect" onchange="changeLanguage(this.value)">
+                        <option value="ar">العربية</option>
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="setting-group">
+                <div class="setting-title">تعديل الألوان والسمة</div>
+                <div class="setting-control">
+                    <select id="themeSelect" onchange="changeTheme(this.value)">
+                        <option value="default">ليالي كوين (وردي)</option>
+                        <option value="theme-cyber">سيبربانك (نيون)</option>
+                        <option value="theme-gold">الملكي (ذهبي)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="setting-group">
+                <div class="setting-title">وضع السينما (إضاءة خافتة)</div>
+                <label class="switch">
+                    <input type="checkbox" id="cinemaToggle" onchange="toggleCinemaMode(this.checked)">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="setting-group">
+                <div class="setting-title">تفعيل الإشعارات الخارجية</div>
+                <label class="switch">
+                    <input type="checkbox" id="notifToggle" onchange="toggleNotifications(this.checked)">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="setting-group">
+                <div class="setting-title">نظام السعادة (رسائل تحفيزية)</div>
+                <label class="switch">
+                    <input type="checkbox" id="happinessToggle" checked onchange="toggleHappinessSystem(this.checked)">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div id="searchModal" class="modal" style="align-items:flex-start; padding-top:40px;">
+        <div class="modal-content" style="border-radius:20px; max-height:85dvh;">
+            <div style="display:flex; gap:10px; margin-bottom:12px;">
+                <input type="text" id="searchInput" placeholder="ابحث عن فيلم، مسلسل أو فنان..." style="flex:1; background:var(--bg-main); border:1px solid var(--border); padding:10px 14px; border-radius:8px; font-size:13px;" oninput="performSearch(this.value)">
+                <button onclick="closeSearchModal()" style="font-weight:900;">إلغاء</button>
+            </div>
+
+            <div class="search-tabs">
+                <button class="search-tab-btn active" id="tabMovieBtn" onclick="setSearchMode('movie')">🎬 أفلام ومسلسلات</button>
+                <button class="search-tab-btn" id="tabActorBtn" onclick="setSearchMode('actor')">⭐ فنانين وممثلين</button>
+            </div>
+
+            <div class="movie-grid" id="searchResultsGrid"></div>
+        </div>
+    </div>
+
+    <nav class="bottom-nav">
+        <button class="nav-item active" data-section="home" onclick="showSection('home')">
+            <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+            الرئيسية
+        </button>
+        <button class="nav-item" data-section="movies" onclick="showSection('movies')">
+            <svg viewBox="0 0 24 24"><path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/></svg>
+            الأفلام
+        </button>
+        <button class="nav-item" data-section="series" onclick="showSection('series')">
+            <svg viewBox="0 0 24 24"><path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"/></svg>
+            المسلسلات
+        </button>
+        <button class="nav-item" data-section="favorites" onclick="showSection('favorites')">
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            المفضلة
+        </button>
+        <button class="nav-item" data-section="vip" onclick="showSection('vip')">
+            <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+            VIP
+        </button>
+    </nav>
+
+    <div id="toast" class="toast">تمت العملية بنجاح</div>
+
+    <script>
+        const CONFIG = {
+            API_KEY: "108786103b4b14c7a0880d768bc9f865",
+            LANG: "ar-SA",
+            IMG: "https://image.tmdb.org/t/p/w500",
+            BACKDROP: "https://image.tmdb.org/t/p/original"
+        };
+
+        let favorites = JSON.parse(localStorage.getItem("layaly_favs") || "[]");
+        let currentItem = null;
+        let activeServer = 'vidsrc';
+        let currentMovieList = [];
+        let currentIndex = 0;
+        let happinessEnabled = true;
+        let searchMode = 'movie'; // 'movie' or 'actor'
+
+        const translations = {
+            ar: { home: "الرئيسية", movies: "الأفلام", series: "المسلسلات", trending: "🔥 الرائج", favorites: "المفضلة", ai: "🤖 مساعد الذكاء" },
+            en: { home: "Home", movies: "Movies", series: "Series", trending: "🔥 Trending", favorites: "Favorites", ai: "🤖 AI Assistant" },
+            fr: { home: "Accueil", movies: "Films", series: "Séries", trending: "🔥 Tendances", favorites: "Favoris", ai: "🤖 Assistant AI" }
+        };
+
+        const happinessQuotes = [
+            "✨ أتمنى لك وقتاً ممتعاً ومملوءاً بالسعادة في ليالي كوين 2!",
+            "🌟 ابتسم، أنت تتابع أروع المنصات الحصرية ليالي كوين 2!",
+            "🎬 نتمنى لك جلسة مشاهدة ممتعة ومريحة للغاية!",
+            "💖 شكراً لأنك جزء من عائلة ليالي كوين المميزة!"
+        ];
+
+        document.addEventListener("DOMContentLoaded", async () => {
+            await loadHomeContent();
+            setTimeout(() => {
+                document.getElementById("loader").classList.add("hidden");
+                if (happinessEnabled) {
+                    showToast(happinessQuotes[Math.floor(Math.random() * happinessQuotes.length)]);
+                }
+            }, 600);
+        });
+
+        async function fetchTMDB(endpoint, params = {}) {
+            const url = new URL("https://api.themoviedb.org/3" + endpoint);
+            url.searchParams.set("api_key", CONFIG.API_KEY);
+            url.searchParams.set("language", CONFIG.LANG);
+            Object.entries(params).forEach(([k, v]) => url.searchParams.set(k, v));
+            try {
+                const res = await fetch(url);
+                return await res.json();
+            } catch (e) { return null; }
+        }
+
+        async function loadHomeContent() {
+            const trendingMovies = await fetchTMDB("/trending/movie/week");
+            const trendingSeries = await fetchTMDB("/trending/tv/week");
+
+            if (trendingMovies && trendingMovies.results) {
+                currentMovieList = trendingMovies.results;
+                renderGrid(currentMovieList.slice(0, 12), "homeMoviesGrid");
+                setHero(currentMovieList[0]);
+            }
+            if (trendingSeries && trendingSeries.results) {
+                renderGrid(trendingSeries.results.slice(0, 12), "homeSeriesGrid");
+            }
+        }
+
+        function setHero(item) {
+            if (!item) return;
+            const bg = item.backdrop_path ? CONFIG.BACKDROP + item.backdrop_path : "";
+            document.getElementById("heroBg").style.backgroundImage = `url("${bg}")`;
+            document.getElementById("heroTitle").textContent = item.title || item.name;
+            document.getElementById("heroDesc").textContent = item.overview || "";
+            document.getElementById("heroPlayBtn").onclick = () => triggerAdAndOpenDetails(item, 'movie');
+        }
+
+        function renderGrid(items, containerId) {
+            const container = document.getElementById(containerId);
+            if (!container) return;
+            container.innerHTML = "";
+            if (!items.length) {
+                container.innerHTML = `<div class="empty-state">لا توجد نتائج متاحة حالياً.</div>`;
+                return;
+            }
+            items.forEach((item, index) => {
+                const type = item.media_type || (item.first_air_date ? 'tv' : 'movie');
+                const card = document.createElement("div");
+                card.className = "movie-card";
+                const title = item.title || item.name || "بدون عنوان";
+                const poster = item.poster_path ? CONFIG.IMG + item.poster_path : "";
+                const rating = Number(item.vote_average || 0).toFixed(1);
+
+                card.innerHTML = `
+                    <div class="movie-poster">
+                        <img src="${poster}" loading="lazy" alt="">
+                        <div class="movie-rating">★ ${rating}</div>
+                    </div>
+                    <div class="movie-info">
+                        <div class="movie-name">${title}</div>
+                    </div>
+                `;
+                card.onclick = () => {
+                    currentIndex = index;
+                    triggerAdAndOpenDetails(item, type);
+                };
+                container.appendChild(card);
+            });
+        }
+
+        function triggerAdAndOpenDetails(item, type) {
+            closeSearchModal(); // إغلاق بحث تلقائياً
+            const adOverlay = document.getElementById("adInterstitial");
+            const timerText = document.getElementById("adTimerText");
+            adOverlay.style.display = "flex";
+            let timeLeft = 5;
+            timerText.textContent = `سيبدأ العرض خلال ${timeLeft} ثوانٍ...`;
+
+            const countdown = setInterval(() => {
+                timeLeft--;
+                if (timeLeft > 0) {
+                    timerText.textContent = `سيبدأ العرض خلال ${timeLeft} ثوانٍ...`;
+                } else {
+                    clearInterval(countdown);
+                    adOverlay.style.display = "none";
+                    openDetailsModal(item, type);
+                }
+            }, 1000);
+        }
+
+        async function openDetailsModal(item, type) {
+            currentItem = { ...item, media_type: type };
+            document.getElementById("modalTitle").textContent = item.title || item.name;
+            document.getElementById("modalOverview").textContent = item.overview || "لا توجد تفاصيل متاحة حالياً لهذا العمل.";
+            document.getElementById("modalPoster").src = item.poster_path ? CONFIG.IMG + item.poster_path : "";
+            document.getElementById("modalMetaInfo").textContent = `★ ${Number(item.vote_average || 0).toFixed(1)} | تاريخ الإصدار: ${item.release_date || item.first_air_date || 'غير محدد'}`;
+            
+            updateFavoriteModalButton();
+            setupPlayer('vidsrc');
+            
+            // جلب طاقم العمل (الممثلين)
+            await loadMovieCast(item.id, type);
+
+            document.getElementById("detailsModal").classList.add("active");
+        }
+
+        async function loadMovieCast(id, type) {
+            const castRow = document.getElementById("modalCastRow");
+            castRow.innerHTML = `<div style="font-size:11px; color:var(--text-muted);">جاري التحميل...</div>`;
+            const data = await fetchTMDB(`/${type}/${id}/credits`);
+            if (data && data.cast && data.cast.length) {
+                castRow.innerHTML = "";
+                data.cast.slice(0, 10).forEach(actor => {
+                    const actorDiv = document.createElement("div");
+                    actorDiv.className = "cast-card";
+                    const photo = actor.profile_path ? CONFIG.IMG + actor.profile_path : "logo.jpg";
+                    actorDiv.innerHTML = `
+                        <img src="${photo}" class="cast-img" alt="">
+                        <div class="cast-name">${actor.name}</div>
+                    `;
+                    actorDiv.onclick = () => openActorProfile(actor.id);
+                    castRow.appendChild(actorDiv);
+                });
+            } else {
+                castRow.innerHTML = `<div style="font-size:11px; color:var(--text-muted);">لا توجد معلومات متاحة عن الممثلين.</div>`;
+            }
+        }
+
+        async function openActorProfile(actorId) {
+            closeDetailsModal();
+            const data = await fetchTMDB(`/person/${actorId}`);
+            const credits = await fetchTMDB(`/person/${actorId}/combined_credits`);
+
+            if (data) {
+                document.getElementById("actorName").textContent = data.name;
+                document.getElementById("actorPhoto").src = data.profile_path ? CONFIG.IMG + data.profile_path : "logo.jpg";
+                document.getElementById("actorBio").textContent = data.biography || "لا توجد نبذة تعريفية متاحة لهذا الفنان حالياً.";
+
+                if (credits && credits.cast) {
+                    renderGrid(credits.cast.slice(0, 12), "actorMoviesGrid");
+                }
+                document.getElementById("actorModal").classList.add("active");
+            }
+        }
+
+        function closeActorModal() {
+            document.getElementById("actorModal").classList.remove("active");
+        }
+
+        function closeDetailsModal() {
+            document.getElementById("detailsModal").classList.remove("active");
+            document.getElementById("moviePlayer").src = "";
+        }
+
+        function playNextMovie() {
+            if (!currentMovieList.length) return;
+            currentIndex = (currentIndex + 1) % currentMovieList.length;
+            const nextItem = currentMovieList[currentIndex];
+            const type = nextItem.media_type || (nextItem.first_air_date ? 'tv' : 'movie');
+            openDetailsModal(nextItem, type);
+            showToast("تم الانتقال للعمل التالي تلقائياً 🎬");
+        }
+
+        function setupPlayer(server) {
+            activeServer = server;
+            if (!currentItem) return;
+            const id = currentItem.id;
+            const type = currentItem.media_type || 'movie';
+            let url = "";
+            if (server === 'vidsrc') {
+                url = type === 'tv' ? `https://vidsrc.me/embed/tv?tmdb=${id}` : `https://vidsrc.me/embed/movie?tmdb=${id}`;
+            } else if (server === 'vidsrc_me') {
+                url = type === 'tv' ? `https://vidsrc.to/embed/tv/${id}/1/1` : `https://vidsrc.to/embed/movie/${id}`;
+            } else if (server === 'superembed') {
+                url = `https://multiembed.mov/?video_id=${id}&tmdb=1`;
+            }
+            document.getElementById("moviePlayer").src = url;
+        }
+
+        function switchServer(server, btn) {
+            document.querySelectorAll(".server-btn").forEach(b => b.classList.remove("active"));
+            btn.classList.add("active");
+            setupPlayer(server);
+        }
+
+        function toggleFavoriteCurrent() {
+            if (!currentItem) return;
+            const idx = favorites.findIndex(f => f.id === currentItem.id);
+            if (idx > -1) {
+                favorites.splice(idx, 1);
+                showToast("تم الحذف من المفضلة");
+            } else {
+                favorites.push(currentItem);
+                showToast("تمت الإضافة للمفضلة");
+            }
+            localStorage.setItem("layaly_favs", JSON.stringify(favorites));
+            updateFavoriteModalButton();
+        }
+
+        function updateFavoriteModalButton() {
+            if (!currentItem) return;
+            const exists = favorites.some(f => f.id === currentItem.id);
+            const btn = document.getElementById("favModalBtn");
+            btn.textContent = exists ? "♥ إزالة من المفضلة" : "♡ إضافة لقائمتي";
+        }
+
+        async function filterMoviesByCountry() {
+            const country = document.getElementById("countryFilter").value;
+            if (!country) return;
+            const data = await fetchTMDB("/discover/movie", { with_origin_country: country });
+            if (data && data.results) {
+                currentMovieList = data.results;
+                renderGrid(currentMovieList, "homeMoviesGrid");
+                showToast(`تم التصفية حسب الدولة بنجاح`);
+            }
+        }
+
+        async function showSection(sectionId) {
+            const sections = ['home', 'movies', 'series', 'trending', 'favorites', 'ai', 'vip'];
+            sections.forEach(sec => {
+                const el = document.getElementById(sec + "Section");
+                if (el) el.style.display = (sec === sectionId) ? "block" : "none";
+            });
+            document.querySelectorAll(".nav-item").forEach(nav => {
+                nav.classList.toggle("active", nav.getAttribute("data-section") === sectionId);
+            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            if (sectionId === 'movies') {
+                const data = await fetchTMDB("/discover/movie", { sort_by: "popularity.desc" });
+                if (data) { currentMovieList = data.results; renderGrid(currentMovieList, "moviesGrid"); }
+            } else if (sectionId === 'series') {
+                const data = await fetchTMDB("/discover/tv", { sort_by: "popularity.desc" });
+                if (data) renderGrid(data.results, "seriesGrid");
+            } else if (sectionId === 'trending') {
+                const data = await fetchTMDB("/trending/all/week");
+                if (data) renderGrid(data.results, "trendingGrid");
+            } else if (sectionId === 'favorites') {
+                renderGrid(favorites, "favoritesGrid");
+            }
+        }
+
+        function openSettingsModal() { document.getElementById("settingsModal").classList.add("active"); }
+        function closeSettingsModal() { document.getElementById("settingsModal").classList.remove("active"); }
+
+        function changeFont(fontClass) {
+            const body = document.getElementById("appBody");
+            body.className = body.className.replace(/font-\w+/g, "");
+            if (fontClass !== "default") body.classList.add(fontClass);
+            showToast("تم تغيير الخط بنجاح");
+        }
+
+        function changeLanguage(lang) {
+            CONFIG.LANG = lang === 'ar' ? 'ar-SA' : (lang === 'en' ? 'en-US' : 'fr-FR');
+            document.getElementById("htmlRoot").setAttribute("lang", lang);
+            document.getElementById("htmlRoot").setAttribute("dir", lang === 'ar' ? 'rtl' : 'ltr');
+            const dict = translations[lang];
+            if (dict) {
+                document.querySelectorAll("[data-lang-key]").forEach(el => {
+                    const key = el.getAttribute("data-lang-key");
+                    if (dict[key]) el.textContent = dict[key];
+                });
+            }
+            loadHomeContent();
+            showToast("تم تحديث لغة الواجهة");
+        }
+
+        function changeTheme(themeClass) {
+            const body = document.getElementById("appBody");
+            body.className = body.className.replace(/theme-\w+/g, "");
+            if (themeClass !== "default") body.classList.add(themeClass);
+            showToast("تم تغيير السمة واللون بنجاح");
+        }
+
+        function toggleCinemaMode(enabled) {
+            document.getElementById("appBody").classList.toggle("cinema-mode", enabled);
+            showToast(enabled ? "تم تفعيل وضع السينما 🎬" : "تم إيقاف وضع السينما");
+        }
+
+        function toggleNotifications(enabled) {
+            if (enabled) {
+                showToast("تم تفعيل استقبال الإشعارات الخارجية بنجاح 🔔");
+            } else {
+                showToast("تم إيقاف الإشعارات");
+            }
+        }
+
+        function toggleHappinessSystem(enabled) {
+            happinessEnabled = enabled;
+            showToast(enabled ? "نظام السعادة مفعل ✨" : "تم ايقاف نظام السعادة");
+        }
+
+        function openSearchModal() { document.getElementById("searchModal").classList.add("active"); document.getElementById("searchInput").focus(); }
+        function closeSearchModal() { document.getElementById("searchModal").classList.remove("active"); }
+
+        function setSearchMode(mode) {
+            searchMode = mode;
+            document.getElementById("tabMovieBtn").classList.toggle("active", mode === 'movie');
+            document.getElementById("tabActorBtn").classList.toggle("active", mode === 'actor');
+            const q = document.getElementById("searchInput").value;
+            if (q) performSearch(q);
+        }
+
+        async function performSearch(query) {
+            if (!query.trim()) { document.getElementById("searchResultsGrid").innerHTML = ""; return; }
+            
+            if (searchMode === 'movie') {
+                const data = await fetchTMDB("/search/multi", { query });
+                if (data && data.results) { renderGrid(data.results, "searchResultsGrid"); }
+            } else {
+                const data = await fetchTMDB("/search/person", { query });
+                if (data && data.results) {
+                    renderActorSearchResults(data.results, "searchResultsGrid");
+                }
+            }
+        }
+
+        function renderActorSearchResults(actors, containerId) {
+            const container = document.getElementById(containerId);
+            if (!container) return;
+            container.innerHTML = "";
+            if (!actors.length) {
+                container.innerHTML = `<div class="empty-state">لا توجد نتائج مطابقة لهذا الفنان.</div>`;
+                return;
+            }
+            actors.forEach(actor => {
+                const card = document.createElement("div");
+                card.className = "movie-card";
+                const poster = actor.profile_path ? CONFIG.IMG + actor.profile_path : "logo.jpg";
+                card.innerHTML = `
+                    <div class="movie-poster">
+                        <img src="${poster}" loading="lazy" alt="">
+                    </div>
+                    <div class="movie-info">
+                        <div class="movie-name">${actor.name}</div>
+                    </div>
+                `;
+                card.onclick = () => {
+                    closeSearchModal();
+                    openActorProfile(actor.id);
+                };
+                container.appendChild(card);
+            });
+        }
+
+        async function askAiAssistant() {
+            const input = document.getElementById("aiInput");
+            const box = document.getElementById("aiMessages");
+            const txt = input.value.trim();
+            if (!txt) return;
+
+            box.innerHTML += `<div style="background:var(--accent-primary); padding:10px; border-radius:8px; font-size:12px; margin-left:auto; max-width:80%;">${txt}</div>`;
+            input.value = "";
+            box.scrollTop = box.scrollHeight;
+
+            setTimeout(() => {
+                box.innerHTML += `<div style="background:var(--bg-main); padding:10px; border-radius:8px; font-size:12px; max-width:80%;">أنصحك بمشاهدة أحدث الأفلام والمسلسلات الحصرية المتاحة في الواجهة الرئيسية لمنصة ليالي كوين 2 VIP!</div>`;
+                box.scrollTop = box.scrollHeight;
+            }, 800);
+        }
+
+        function copyPhone() {
+            const phone = document.getElementById("phoneNumber").textContent;
+            navigator.clipboard.writeText(phone);
+            showToast("تم نسخ الرقم بنجاح");
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById("toast");
+            toast.textContent = msg;
+            toast.classList.add("show");
+            setTimeout(() => toast.classList.remove("show"), 3000);
+        }
+    </script>
+</body>
+</html>
